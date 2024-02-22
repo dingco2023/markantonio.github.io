@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!
+    <!
   Group Members:
  	 Gabriel Mari S. Flores
 	Agupitan Christopher A. Jr.
 	Antonio, Mark Eric
 	Jornales, Peter joshua O.
   >
+  <link rel="stylesheet" href="enhancement.css">
 </head>
 <body>
-<h1>Registration Form</h1>
 
-	<form> 
-	First Name: <input type=”text” name=”firstname”> <br/>
-Last Name: <input type=”text” name=”lastname”> <br/>
-	Nick Name: <input type=”text” name=”nickname”> <br/>
-	Email: <input type= "text" name= "Email" /> <br>
-	Password: <input type= "password" name= "password" /> <br/>
-	 <label for="Date of Birth">Date of Birth:</label>
-  	<input type="date" id="Date of Birth" name="Date of Birth">
- 	<br>
+<div class="wrapper">
+  <div class="container">
+    <form> 
+      <h1 class="heading">Registration Form</h1>
+      First Name:<br> <input type="text" name="firstname"> <br>
+      Last Name:<br> <input type="text" name="lastname"> <br>
+      Nick Name:<br> <input type="text" name="nickname"> <br>
+      Email:<br> <input type="text" name="Email"> <br>
+      Password:<br> <input type="password" name="password"> <br>
+      <label for="DateOfBirth">Date of Birth:<br></label>
+      <input type="date" id="DateOfBirth" name="DateOfBirth"><br>
+      <label>Gender:</label>
+      <div class="gender-options">
+        <div class="gender-option">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+        </div>
+        <div class="gender-option">
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+        <div class="gender-option">
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <br> <!-- Adding a line break for spacing -->
+      <div class="mobile-field">
+        Mobile:<br> <input type="text" name="mobile" class="full-width"> <br>
+      </div>
+      Address:<br> <textarea name="address" cols="30" rows="10"></textarea> <br>
+      <button type="submit" class="submit-btn">Submit</button>
+      <button type="reset" class="reset-btn">Reset</button>
+    </form>
+  </div>
+</div>
 
- Gender: <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label>
-
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
-
-
-	Mobile: <input type=”text” name=”mobile”> <br/>
-	Address: <textarea name=”address” cols=”30”rows=”10”></textarea> <br/>
-	</form>
-	
-<button type="button">Submit</button>
-  	<button type="button">Reset</button>
 </body>
 </html>
-
